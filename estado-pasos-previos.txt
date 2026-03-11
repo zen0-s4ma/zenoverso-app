@@ -1,0 +1,39 @@
+Estado de pasos previos de zenoverso-app
+
+Ruta local de trabajo actual:
+C:\Users\joaquin.rincon\Desktop\temp\zenoverso-app
+
+Paso actual en curso:
+3
+
+Pasos completados:
+- Paso 1: decidido y documentado
+- Paso 2: entorno Rust local operativo y validado
+
+Siguiente paso previsto:
+- Paso 3: crear el repositorio Git desde el minuto cero y decidir si será repo nuevo o si vivirá dentro de un monorepo mayor
+
+Observaciones:
+- Superficie principal elegida: Codex web dentro de ChatGPT Plus
+- Desarrollo y pruebas locales: Windows
+- Objetivo del producto: multiplataforma
+- Nombre oficial de la aplicación/proyecto: zenoverso-app
+- El entorno local Rust ha quedado operativo sin permisos de administrador
+- Toolchain local actualmente adoptado: stable-x86_64-pc-windows-gnu
+- Gestor del toolchain: rustup
+- Comandos validados correctamente en el paso 2:
+  - rustup -V
+  - rustc -V
+  - cargo -V
+  - rustup show
+  - rustup component add rustfmt clippy
+  - cargo check
+  - cargo run
+  - cargo test
+  - cargo fmt --check
+  - cargo clippy -- -D warnings
+  - cargo doc --no-deps
+- El proyecto temporal __rust-preflight fue eliminado correctamente al finalizar la validación
+- Nota de contexto para el futuro:
+  - el entorno GNU sirve para uso básico sin privilegios de administrador
+  - más adelante algunos crates podrían requerir una instalación más completa de MSYS2/MinGW o un cambio futuro a MSVC si el proyecto lo exigiera
