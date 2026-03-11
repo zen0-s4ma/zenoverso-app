@@ -10,8 +10,31 @@ Pasos completados:
 - Paso 1: decidido y documentado
 - Paso 2: entorno Rust local operativo y validado
 
-Siguiente paso previsto:
-- Paso 3: crear el repositorio Git desde el minuto cero y decidir si será repo nuevo o si vivirá dentro de un monorepo mayor
+Pasos en curso con definición pendiente:
+- Paso 3: crear el repositorio Git desde el minuto cero y fijar su encaje exacto en GitHub
+
+Decisión estructural ya cerrada para el paso 3:
+- zenoverso-app no será un monorepo
+- zenoverso-app no vivirá dentro de un repositorio ya existente
+- zenoverso-app será un repositorio nuevo e independiente
+- ese repositorio nuevo se creará bajo la cuenta de GitHub existente del usuario: zen0-s4ma
+
+Progreso real ya completado en el paso 3:
+- Git está instalado localmente
+- Git responde correctamente en PowerShell
+- La identidad global de Git ha sido configurada
+- La carpeta local actual ya ha sido inicializada como repositorio Git
+- La rama principal local ya ha sido fijada como main
+
+Trabajo pendiente para cerrar el paso 3:
+- crear en GitHub el repositorio remoto zenoverso-app bajo la cuenta zen0-s4ma
+- decidir su visibilidad:
+  - público
+  - o privado
+- no inicializar el repo remoto con README, gitignore ni licencia
+- conectar el remoto origin
+- hacer el primer commit
+- hacer el primer push a main
 
 Observaciones:
 - Superficie principal elegida: Codex web dentro de ChatGPT Plus
@@ -21,19 +44,4 @@ Observaciones:
 - El entorno local Rust ha quedado operativo sin permisos de administrador
 - Toolchain local actualmente adoptado: stable-x86_64-pc-windows-gnu
 - Gestor del toolchain: rustup
-- Comandos validados correctamente en el paso 2:
-  - rustup -V
-  - rustc -V
-  - cargo -V
-  - rustup show
-  - rustup component add rustfmt clippy
-  - cargo check
-  - cargo run
-  - cargo test
-  - cargo fmt --check
-  - cargo clippy -- -D warnings
-  - cargo doc --no-deps
-- El proyecto temporal __rust-preflight fue eliminado correctamente al finalizar la validación
-- Nota de contexto para el futuro:
-  - el entorno GNU sirve para uso básico sin privilegios de administrador
-  - más adelante algunos crates podrían requerir una instalación más completa de MSYS2/MinGW o un cambio futuro a MSVC si el proyecto lo exigiera
+- El paso 3 quedará cerrado cuando el repositorio remoto exista y el primer push a main haya funcionado
