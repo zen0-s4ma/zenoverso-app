@@ -4,15 +4,16 @@ Ruta local de trabajo actual:
 C:\Users\joaquin.rincon\Desktop\temp\zenoverso-app
 
 Paso actual en curso:
-4
+5
 
 Pasos completados:
 - Paso 1: decidido y documentado
 - Paso 2: entorno Rust local operativo y validado
 - Paso 3: repositorio Git local y remoto creado y conectado correctamente
+- Paso 4: raíz real del proyecto, identidad oficial y convención de rutas fijadas
 
 Siguiente paso previsto:
-- Paso 4: fijar la raíz real del proyecto, la carpeta exacta, el nombre definitivo del repo y la convención de rutas
+- Paso 5: decidir que el proyecto arranca como workspace de Cargo, aunque al principio solo tenga un crate funcional
 
 Observaciones:
 - Superficie principal elegida: Codex web dentro de ChatGPT Plus
@@ -21,13 +22,21 @@ Observaciones:
 - Nombre oficial de la aplicación/proyecto: zenoverso-app
 - Cuenta de GitHub del proyecto: zen0-s4ma
 - Repositorio remoto oficial: https://github.com/zen0-s4ma/zenoverso-app
+- Slug oficial GitHub: zen0-s4ma/zenoverso-app
 - Visibilidad del repositorio: público
 - Rama principal remota y local: main
 - El entorno local Rust ha quedado operativo sin permisos de administrador
 - Toolchain local actualmente adoptado: stable-x86_64-pc-windows-gnu
 - Gestor del toolchain: rustup
-- El proyecto ya dispone de:
-  - repositorio Git local inicializado
-  - remoto origin configurado
-  - commit inicial realizado
-  - primer push a origin/main completado
+
+Definiciones oficiales fijadas al cerrar el paso 4:
+- La ruta local actual del proyecto es temporal
+- La raíz canónica del proyecto se define como el Git root del repositorio
+- La documentación usará por defecto rutas relativas al repo root
+- Las rutas absolutas Windows solo se usarán cuando sean necesarias para operaciones locales reales
+- En documentación general se usará la barra /
+- En ejemplos PowerShell se usarán rutas Windows reales cuando haga falta
+- Los nombres oficiales quedan fijados así:
+  - app/proyecto: zenoverso-app
+  - repositorio GitHub: zenoverso-app
+  - slug GitHub: zen0-s4ma/zenoverso-app
