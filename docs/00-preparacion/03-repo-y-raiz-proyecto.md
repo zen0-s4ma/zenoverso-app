@@ -1,7 +1,7 @@
 # Paso 3 — Repositorio Git y decisión de encaje
 
 ## Estado
-En curso.
+Hecho.
 
 ## Objetivo de este paso
 Crear el repositorio Git desde el minuto cero y decidir correctamente cómo se encaja zenoverso-app en GitHub.
@@ -26,38 +26,45 @@ La decisión correcta es esta:
 
 ## Decisiones cerradas en este paso
 - el proyecto se almacenará en GitHub bajo la cuenta existente `zen0-s4ma`
-- se creará un repositorio nuevo e independiente llamado `zenoverso-app`
-- la carpeta local actual será la base del repositorio
-- este paso no se considera cerrado hasta que exista el remoto y se haya realizado el primer push
+- se ha creado un repositorio nuevo e independiente llamado `zenoverso-app`
+- la carpeta local actual actúa como raíz base del repositorio
+- la rama principal oficial es `main`
+- la visibilidad del repositorio ha quedado fijada como **público**
 
-## Progreso real ya completado
-En local ya se ha dejado hecho todo esto:
+## Ejecución real completada
+En local y remoto ya ha quedado hecho todo esto:
 - Git está instalado y operativo
 - la identidad global de Git ha sido configurada
-- la carpeta local actual ya ha sido inicializada con `git init`
-- la rama principal ya ha sido fijada como `main`
+- la carpeta local actual ha sido inicializada con `git init`
+- la rama principal local ha sido fijada como `main`
+- se ha creado el repositorio remoto `zenoverso-app` bajo la cuenta `zen0-s4ma`
+- se ha configurado el remoto `origin`
+- se ha realizado el primer commit local
+- se ha realizado el primer push a `origin/main`
+- la rama local `main` ha quedado asociada a `origin/main`
 
-## Qué tiene que hacer el usuario para cerrar este paso
+## Datos oficiales resultantes del paso
+- owner GitHub: `zen0-s4ma`
+- nombre del repositorio: `zenoverso-app`
+- URL remota oficial: `https://github.com/zen0-s4ma/zenoverso-app`
+- visibilidad: `public`
+- rama principal: `main`
 
-### 1. Crear en GitHub el repositorio remoto
-Crear un repositorio nuevo con estas características:
-- owner: `zen0-s4ma`
-- nombre: `zenoverso-app`
+## Resultado estructural al cierre
+A partir de este punto queda fijado que:
+- la carpeta local `C:\Users\joaquin.rincon\Desktop\temp\zenoverso-app` es la base local del proyecto
+- el repositorio Git local ya está conectado con su repositorio remoto oficial
+- el proyecto está listo para seguir avanzando sobre Git real desde el paso 4 en adelante
+- esta base permitirá más adelante conectar y usar correctamente el repositorio con Codex web
 
-Y no inicializarlo con:
-- README
-- `.gitignore`
-- licencia
+## Qué no se decide todavía en este paso
+- AGENTS.md
+- workspace Cargo
+- estructura definitiva de crates
+- configuración de Codex
+- reglas de ejecución
+- CI/CD
+- contenido del primer hito
 
-### 2. Decidir la visibilidad del repositorio
-Queda pendiente elegir una de estas dos opciones:
-- público
-- privado
-
-### 3. Conectar el remoto
-Desde la carpeta del proyecto:
-
-```powershell
-Set-Location C:\Users\joaquin.rincon\Desktop\temp\zenoverso-app
-git remote add origin https://github.com/zen0-s4ma/zenoverso-app.git
-git remote -v
+## Resultado documental de este paso
+Se considera oficialmente cerrado el paso 3: zenoverso-app ya existe como repositorio Git nuevo e independiente, público, bajo la cuenta `zen0-s4ma`, con repositorio local y remoto correctamente enlazados y primer push realizado.
