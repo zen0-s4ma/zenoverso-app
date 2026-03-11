@@ -4,7 +4,7 @@ Ruta local de trabajo actual:
 C:\Users\joaquin.rincon\Desktop\temp\zenoverso-app
 
 Paso actual en curso:
-6
+7
 
 Pasos completados:
 - Paso 1: decidido y documentado
@@ -12,9 +12,10 @@ Pasos completados:
 - Paso 3: repositorio Git local y remoto creado y conectado correctamente
 - Paso 4: raíz real del proyecto, identidad oficial y convención de rutas fijadas
 - Paso 5: forma base del workspace de Cargo decidida
+- Paso 6: estructura de alto nivel del repositorio fijada
 
 Siguiente paso previsto:
-- Paso 6: definir la estructura de alto nivel del repositorio sin rellenarla todavía
+- Paso 7: decidir los crates previstos desde el inicio, aunque algunos empiecen vacíos
 
 Observaciones:
 - Superficie principal elegida: Codex web dentro de ChatGPT Plus
@@ -30,11 +31,29 @@ Observaciones:
 - Toolchain local actualmente adoptado: stable-x86_64-pc-windows-gnu
 - Gestor del toolchain: rustup
 
-Definiciones oficiales fijadas al cerrar el paso 5:
-- El proyecto arrancará formalmente como workspace de Cargo desde el día 1
-- La raíz del repositorio usará un workspace virtual
-- El primer crate funcional previsto se ubicará en:
-  - crates/zenoverso-app
-- El nombre del primer paquete/binario funcional previsto será:
-  - zenoverso-app
-- La raíz del repositorio no quedará atada a un crate compilable desde el primer día
+Definiciones oficiales fijadas al cerrar el paso 6:
+- La estructura de alto nivel del repositorio será amplia desde el principio
+- El árbol de alto nivel reservado incluye:
+  - crates/
+  - docs/
+  - tests/
+  - benches/
+  - scripts/
+  - .codex/
+  - .github/workflows/
+  - adjuntos/
+- docs/ quedará separado desde ya por dominios:
+  - docs/00-preparacion/
+  - docs/vision/
+  - docs/architecture/
+  - docs/decisions/
+  - docs/testing/
+  - docs/operations/
+  - docs/milestones/
+- crates/ reservará desde ya estas rutas previstas:
+  - crates/zenoverso-app/
+  - crates/core/
+  - crates/api/
+  - crates/infra/
+  - crates/xtask/
+- Esta estructura queda fijada sin rellenar todavía con implementación real
